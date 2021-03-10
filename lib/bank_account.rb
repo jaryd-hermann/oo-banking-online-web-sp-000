@@ -17,5 +17,9 @@ def display_balance
   puts "Your balance is $#{self.balance}."
 end
 
+def valid?
+  true unless !self.status == "open" && !self.balance > 0
+
+end
 
 end
