@@ -9,7 +9,7 @@ def initialize(sender, receiver, amount)
 end
 
 def valid?(sender, receiver)
-  if sender.valid? && receiver.valid?
+  if BankAccount.sender.valid? && BankAccount.receiver.valid?
     true
   else
     false
