@@ -4,7 +4,6 @@ attr_reader :name
 
 def initialize(name)
   @name = name
-  @name.freeze
   @balance = 1000
   @status = "open"
 end
