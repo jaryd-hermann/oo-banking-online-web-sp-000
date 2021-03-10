@@ -10,8 +10,12 @@ end
 
 
 def deposit(amount)
-  @balance += amount
+  self.balance += amount
 end
+
+def withdrawal(amount)
+    self.balance -= amount
+  end
 
 def display_balance
   "Your balance is $#{self.balance}."
@@ -25,8 +29,6 @@ def valid?
   end
   #true unless !self.status == "open" && !self.balance > 0
 end
-
-
 
 def close_account
   self.status = "closed"
