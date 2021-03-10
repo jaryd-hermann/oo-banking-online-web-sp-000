@@ -12,7 +12,7 @@ def deposit(amount)
   @balance += amount
 end
 
-def self.display_balance
+def display_balance
   puts "Your balance is $#{self.balance}."
 end
 
