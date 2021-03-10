@@ -29,7 +29,6 @@ end
 
 
 def close_account
-  self =  nil
 end
 
 end
