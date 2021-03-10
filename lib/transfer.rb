@@ -2,8 +2,8 @@ class Transfer
 attr_accessor :sender, :reciever, :amount
 
 def initialize(sender, receiver, amount)
-  @sender = sender
-  @receiver = receiver
+  @sender = sender #BankAccount class instance
+  @receiver = receiver  #BankAccount class instance
   @amount = amount
   @status = "pending"
 end
