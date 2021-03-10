@@ -17,12 +17,12 @@ def valid?(sender, receiver)
 end
 
 def execute_transfer
-  if self.valid? 
+  if self.valid?
   BankAccount.receiver.balance += @amount
   BankAccount.sender.balance -+ @amount
-  else 
-  end 
+  else
+  end
 
-end 
+end
 
 end
