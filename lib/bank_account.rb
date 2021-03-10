@@ -1,9 +1,9 @@
 class BankAccount
 attr_accessor :name, :balance, :status
 
-def initialize
+def initialize(name)
   @name = name
-  @name.freeze 
+  @name.freeze
   @balance = 0
   @status = "open"
 end
