@@ -17,10 +17,17 @@ def valid?(sender, receiver)
 end
 
 def execute_transfer
-  if self.valid?
-  BankAccount.receiver.balance += @amount
-  BankAccount.sender.balance -+ @amount
+  if @sender.balance < @amount
+    @status = "rejected"
+    "Transaction rejected. Please check your account balance."
+
+  elsif @status = "complete"
+    "Transaction was already excuted"
+
   else
+  @receiver.deposit(@amount)
+  @sender.deposit( @amount * -1 )
+  @status = "complete"
   end
 
 end
