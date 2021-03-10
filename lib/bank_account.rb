@@ -3,7 +3,7 @@ attr_accessor :name, :balance, :status, :amount
 
 def initialize(name)
   @name = name
-  @name.freeze 
+  @name.freeze
   @balance = 1000
   @status = "open"
 end
@@ -26,8 +26,10 @@ def valid?
   #true unless !self.status == "open" && !self.balance > 0
 end
 
+
+
 def close_account
-  self.destroy
+  self =  nil
 end
 
 end
