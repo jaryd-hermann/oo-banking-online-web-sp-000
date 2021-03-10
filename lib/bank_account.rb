@@ -27,7 +27,7 @@ def valid?
 end
 
 def close_account
-  self.delete
+  self.destroy
 end
 
 end
