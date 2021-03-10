@@ -3,7 +3,7 @@ attr_accessor :name, :balance, :status, :amount
 
 def initialize(name)
   @name = name
-  self.name.freeze 
+  @name.freeze 
   @balance = 1000
   @status = "open"
 end
